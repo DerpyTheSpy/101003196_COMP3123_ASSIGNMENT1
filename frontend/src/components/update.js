@@ -24,7 +24,7 @@ export default function Update() {
     }, []);
 
     const updateAPIData = () => {
-            axios.put(`https://637dbef49c2635df8f8d96a9.mockapi.io/checkingData/${id}`,{
+            axios.put(`https://638cc3f8d2fc4a058a5f746c.mockapi.io/checkingData/${id}`,{
             firstName,
             lastName,
             email,

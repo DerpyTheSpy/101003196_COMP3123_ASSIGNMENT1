@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Read() {
     const [APIData, setAPIData] = useState([]);
     useEffect(() => {
-        axios.get(`https://637dbef49c2635df8f8d96a9.mockapi.io/checkingData`)
+        axios.get(`https://638cc3f8d2fc4a058a5f746c.mockapi.io/checkingData`)
             .then((response) => {
                 console.log(response.data)
                 setAPIData(response.data);
@@ -24,14 +24,14 @@ export default function Read() {
     }
 
     const getData = () => {
-        axios.get(`https://637dbef49c2635df8f8d96a9.mockapi.io/checkingData`)
+        axios.get(`https://638cc3f8d2fc4a058a5f746c.mockapi.io/checkingData`)
             .then((getData) => {
                 setAPIData(getData.data);
             })
     }
 
     const onDelete = (id) => {
-        axios.delete(`https://637dbef49c2635df8f8d96a9.mockapi.io/checkingData/${id}`)
+        axios.delete(`https://638cc3f8d2fc4a058a5f746c.mockapi.io/checkingData/${id}`)
         .then(() => {
             getData();
         })

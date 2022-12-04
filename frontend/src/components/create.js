@@ -12,7 +12,7 @@ export default function Create(){
     const[salary,setSalary] = useState(''); 
     
     const postData = () => {
-        axios.post(`https://637dbef49c2635df8f8d96a9.mockapi.io/checkingData`,{
+        axios.post(`https://638cc3f8d2fc4a058a5f746c.mockapi.io/checkingData`,{
             firstName,
             lastName,
             email,
