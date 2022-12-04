@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #212121;
+  color: whitesmoke;
+  flex-direction: column;
+}
+.create-form{
+  color: whitesmoke !important;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
