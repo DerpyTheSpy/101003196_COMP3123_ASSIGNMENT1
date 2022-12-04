@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import "./read.css";
 
 export default function Read() {
     const [APIData, setAPIData] = useState([]);
@@ -42,12 +43,14 @@ export default function Read() {
             <Table singleLine>
                 <Table.Header>
                     <Table.Row>
-                        <Table.HeaderCell>First Name</Table.HeaderCell>
-                        <Table.HeaderCell>Last Name</Table.HeaderCell>
-                        <Table.HeaderCell>Email</Table.HeaderCell>
-                        <Table.HeaderCell>Salary</Table.HeaderCell>
-                        <Table.HeaderCell>Gender</Table.HeaderCell>
-                        <Table.HeaderCell>Actions</Table.HeaderCell>
+                        <div class="header">
+                            <Table.HeaderCell>First Name</Table.HeaderCell>
+                            <Table.HeaderCell>Last Name</Table.HeaderCell>
+                            <Table.HeaderCell>Email</Table.HeaderCell>
+                            <Table.HeaderCell>Salary</Table.HeaderCell>
+                            <Table.HeaderCell>Gender</Table.HeaderCell>
+                            <Table.HeaderCell>Actions</Table.HeaderCell>
+                        </div>
                     </Table.Row>
                 </Table.Header>
 

@@ -1,6 +1,7 @@
 import React , {useState} from 'react';
-import { Button, Form } from 'semantic-ui-react'
-import axios from 'axios'
+import { Button, Form } from 'semantic-ui-react';
+import axios from 'axios';
+import './create.css';
 
 
 export default function Create(){
